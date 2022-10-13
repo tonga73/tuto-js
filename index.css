@@ -1,0 +1,17 @@
+@import url("./components/header/header.css");
+
+:root {
+  --white: 255, 255, 255;
+  --black: 0, 0, 0;
+  --dark: 61, 61, 61;
+  --light: 225, 225, 225;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#text {
+  display: none;
+}

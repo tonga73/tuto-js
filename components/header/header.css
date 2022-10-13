@@ -1,0 +1,31 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 17px 0;
+  background-color: rgba(var(--black));
+  color: rgb(var(--white));
+}
+
+.header h3 {
+  text-align: center;
+  color: rgb(var(--white));
+}
+
+.header nav {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.header nav button {
+  border: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: rgba(var(--white), 0.5);
+}
+
+.header nav button:hover {
+  color: rgba(var(--white), 1);
+}
