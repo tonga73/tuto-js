@@ -1,3 +1,8 @@
+/* FONT IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
+/* CSS COMPONENT IMPORTS */
 @import url("./components/header/header.css");
 
 :root {
@@ -5,6 +10,9 @@
   --black: 0, 0, 0;
   --dark: 61, 61, 61;
   --light: 225, 225, 225;
+
+  --main-font: "Quicksand", sans-serif;
+  --brand-font: "Shrikhand", cursive;
 }
 
 * {
@@ -12,6 +20,10 @@
   margin: 0;
 }
 
-#text {
-  display: none;
+body * {
+  font-family: var(--main-font);
+}
+
+.font-shrikhand {
+  font-family: var(--brand-font);
 }

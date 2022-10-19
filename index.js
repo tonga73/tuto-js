@@ -1,17 +1,10 @@
+import Router from "./router/router.js";
 import Header from "./components/header/header.js";
-import Navigation from "./components/navigation/navigation.js";
+
+import { Outlet } from "./router/router.js";
 
 const app = document.getElementById("app");
 
-const links = [
-  {
-    url: "/home",
-    name: "Inicio",
-  },
-  {
-    url: "/",
-    name: "Contacto",
-  },
-];
+app.innerHTML = [Header() + Outlet()];
 
-app.innerHTML = [Header(Navigation(links))];
+Router();

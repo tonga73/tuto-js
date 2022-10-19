@@ -1,16 +1,6 @@
-function Navigation(links) {
+function Navigation() {
   return `
     <nav id="navigation">
-        ${
-          !!links &&
-          links.map((link) => {
-            function Button() {
-              return `<button id="navigation-button">${link.name}</button>`;
-            }
-
-            return Button();
-          })
-        }
     </nav>
 `;
 }
