@@ -4,6 +4,8 @@
 
 /* CSS COMPONENT IMPORTS */
 @import url("./components/header/header.css");
+@import url("./components/footer/footer.css");
+@import "./components/card/card.css";
 
 :root {
   --white: 255, 255, 255;
@@ -15,6 +17,15 @@
   --brand-font: "Shrikhand", cursive;
 }
 
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -24,6 +35,22 @@ body * {
   font-family: var(--main-font);
 }
 
+body {
+  background-color: rgb(var(--dark));
+  color: rgb(var(--light));
+}
+
+#outlet {
+  min-height: 100vh;
+}
+
 .font-shrikhand {
   font-family: var(--brand-font);
+}
+
+.home-view {
+  display: grid;
+  row-gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
 }

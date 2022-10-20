@@ -1,4 +1,5 @@
 import { routes } from "./routes.js";
+
 export function Outlet() {
   return `<div id="outlet">OUTLETEANDO</div>`;
 }
@@ -26,6 +27,7 @@ export default function Router() {
       const outlet = document.getElementById("outlet");
       const button = document.createElement("button");
       button.innerText = route.name;
+      button.id = route.name.toLowerCase();
       button.addEventListener("click", (event) => {
         outlet.innerHTML = route.template;
       });

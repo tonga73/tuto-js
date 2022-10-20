@@ -1,0 +1,42 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(var(--white));
+  color: rgb(var(--dark));
+  max-width: 15rem;
+  border-radius: 7px;
+}
+
+.card .card-image {
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  height: 200px;
+  background-color: rgb(var(--dark));
+  background-position: center;
+  background-size: cover;
+  transition: all ease;
+}
+
+.card .card-image-0 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/White_widow.jpg/1200px-White_widow.jpg");
+}
+
+.card .card-image:hover {
+  background-size: 120%;
+}
+
+.card .card-image .bg-cover {
+  background-color: rgba(var(--dark), 0.7);
+  height: 100%;
+}
+
+.card .card-image .bg-cover:hover {
+  background-color: rgba(var(--dark), 0);
+}
+
+.card-content {
+  display: grid;
+  row-gap: 7px;
+  padding: 5px 10px;
+}

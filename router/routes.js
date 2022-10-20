@@ -1,8 +1,10 @@
+import HomeView from "../views/home-view.js";
+
 export const routes = {
   home: {
     url: "/home",
     name: "Inicio",
-    template: "<div>HOME VIEW</div>",
+    template: HomeView(),
   },
   contact: {
     url: "/contact",
